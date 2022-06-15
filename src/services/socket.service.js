@@ -1,12 +1,8 @@
 import io from 'socket.io-client'
 
-// export const SOCKET_EVENT_ADD_MSG = 'chat-add-msg'
-// export const SOCKET_EMIT_SEND_MSG = 'chat-send-msg'
-// export const SOCKET_EMIT_SET_TOPIC = 'chat-set-topic'
-// export const SOCKET_EMIT_USER_WATCH = 'user-watch'
-// export const SOCKET_EVENT_USER_UPDATED = 'user-updated'
-// export const SOCKET_EVENT_REVIEW_ADDED = 'review-added'
-// export const SOCKET_EVENT_REVIEW_ABOUT_YOU = 'review-about-you'
+
+export const SOCKET_EVENT_COMMENT_ADDED = 'comment-added'
+export const SOCKET_EVENT_COMMENT_ABOUT_YOU = 'comment-about-you'
 
 const SOCKET_EMIT_LOGIN = 'set-user-socket'
 const SOCKET_EMIT_LOGOUT = 'unset-user-socket'
