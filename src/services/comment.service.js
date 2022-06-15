@@ -39,7 +39,7 @@ async function save(comment) {
     }
 }
 
-async function getEmptyComment() {
+function getEmptyComment() {
     return {
         email: '',
         txt: ''

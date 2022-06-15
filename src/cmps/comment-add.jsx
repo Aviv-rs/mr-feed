@@ -5,7 +5,7 @@ export const CommentAdd = () => {
     const [comment, setComment] = useState(commentService.getEmptyComment())
 
     const handleChange = ({ target: { name, value } }) => {
-        setComment(prevComment => ({ [name]: value, ...prevComment }))
+        setComment(prevComment => ({...prevComment, [name]: value }))
     }
 
     const onAddComment = async () => {
@@ -26,7 +26,7 @@ export const CommentAdd = () => {
                     autoComplete="off"
                     name="email"
                     onChange={handleChange}
-                    value={comment.email}
+                    // value={comment.email}
                 />
             </div>
             <div className="form-group">
@@ -34,9 +34,9 @@ export const CommentAdd = () => {
                     required
                     placeholder="Message"
                     autoComplete="off"
-                    name="comment"
+                    name="txt"
                     onChange={handleChange}
-                    value={comment.txt}
+                    // value={comment.txt}
                     rows={5}
                 />
             </div>
