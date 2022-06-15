@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { CommentList } from './comment-list'
 import { commentService } from '../services/comment.service'
 

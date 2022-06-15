@@ -8,7 +8,8 @@ export const CommentAdd = () => {
         setComment(prevComment => ({...prevComment, [name]: value }))
     }
 
-    const onAddComment = async () => {
+    const onAddComment = async (ev) => {
+        ev.preventDefault()
         await commentService.save(comment)
         setComment(commentService.getEmptyComment())
     }
