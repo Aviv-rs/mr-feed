@@ -1,9 +1,9 @@
 .comment-add {
     gap: 10px;
-    background-color: $clr2;
     padding: 24px 32px;
     min-width: 350px;
     min-height: 200px;
+    background-color: darken($clr5, 10%);
 
     .form-group {
         width: 100%;
