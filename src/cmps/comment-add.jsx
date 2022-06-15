@@ -16,7 +16,7 @@ export const CommentAdd = () => {
 
     return (
         <form
-            className="comment-add mt-3 flex column align-center"
+            className="comment-add flex column align-center"
             onSubmit={onAddComment}
         >
             <div className="form-group">
@@ -24,7 +24,6 @@ export const CommentAdd = () => {
                     required
                     type="email"
                     placeholder="Email"
-                    autoComplete="off"
                     name="email"
                     onChange={handleChange}
                     value={comment.email}
