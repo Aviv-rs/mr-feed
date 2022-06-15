@@ -1,14 +1,18 @@
-export const CommentPreview = ({ comment }) => {
-    return <div className="comment-preview">
-        <div className="comment-img-container">
-            {/* <img className="comment-img" src={comment.imgUrl || ''} alt="" /> */}
-        </div>
-        <h3 className="comment-email">
-            {comment.email}
-        </h3>
+import defaultAvatar from '../assets/imgs/default-avatar.png'
 
-        <div className="comment-txt">
-            {comment.txt}
+export const CommentPreview = ({ comment }) => {
+    return <article className="comment-preview">
+        <div className="comment-avatar-container">
+            <img className="comment-avatar" src={comment.avatar || defaultAvatar} alt="" />
         </div>
-    </div>
+        <div className="comment-details flex column">
+            <h3 className="comment-email">
+                {comment.email}
+            </h3>
+
+            <div className="comment-txt">
+                {comment.txt}
+            </div>
+        </div>
+    </article>
 }
