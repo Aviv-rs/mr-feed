@@ -6,7 +6,7 @@ export const FeedApp = () => {
         <h1 className="app-title">Mister Feed</h1>
         <section className="main-container flex column">
             <CommentAdd />
-            <CommentFilter />
+            {/* <CommentFilter /> */}
             <CommentSection />
         </section>
     </section>
