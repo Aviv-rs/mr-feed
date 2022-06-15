@@ -27,7 +27,7 @@ export const CommentAdd = () => {
                     autoComplete="off"
                     name="email"
                     onChange={handleChange}
-                    // value={comment.email}
+                    value={comment.email}
                 />
             </div>
             <div className="form-group">
@@ -37,7 +37,7 @@ export const CommentAdd = () => {
                     autoComplete="off"
                     name="txt"
                     onChange={handleChange}
-                    // value={comment.txt}
+                    value={comment.txt}
                     rows={5}
                 />
             </div>
