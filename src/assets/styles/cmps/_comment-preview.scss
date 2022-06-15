@@ -1,12 +1,23 @@
 .comment-preview {
     display: grid;
-    gap: 7px;
+    grid-template-columns: 50px 1fr;
+    grid-template-rows: 50px 1fr;
+    column-gap: 10px;
 
-    .comment-email {
-        margin-bottom: 0;
+    .comment-avatar-container {
+        grid-column: 1;
+        grid-row: 1/3;
+
     }
 
-    .comment-txt {
-        color: lighten($clr6 , 30%);
+    .comment-details {
+        .comment-email {
+            margin-bottom: 0;
+        }
+
+        .comment-txt {
+            color: lighten($clr6 , 30%);
+            grid-column: 2;
+        }
     }
 }
