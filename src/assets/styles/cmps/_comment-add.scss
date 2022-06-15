@@ -1,0 +1,19 @@
+.comment-add {
+    gap: 10px;
+    background-color: $clr2;
+    padding: 24px 32px;
+    min-width: 350px;
+    min-height: 200px;
+
+    .form-group {
+        width: 100%;
+
+        * {
+            width: 100%;
+        }
+    }
+
+    .submit-container {
+        align-self: end;
+    }
+}
